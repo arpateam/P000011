@@ -1,0 +1,40 @@
+##### Enable mod_rewrite ###############################
+Options -Indexes +FollowSymLinks
+RewriteEngine On
+
+##### Add Trailing Slash ###############################
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI}/ [R=301,L]
+
+##### Redirect HTTPS ###############################
+#RewriteCond %{HTTPS} !=on
+
+##### Only www ###############################
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI}/ [R=301,L]
+
+##### Not use www ###############################
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}/ [R=301,L]
+
+##### Handle my links ###############################
+RewriteRule ^$ index.php [L]
+
+
+##### Deny access to htaccess ###############################
+<files .htaccess>
+    order allow,deny
+    deny from all
+</files>
+
+##### Not Found ###############################
+ErrorDocument 404 /appweb/Controllers/404.php
+##### Forbidden ###############################
+ErrorDocument 403 /appweb/Controllers/403.php
+##### Internal Server Error
+ErrorDocument 500 /appweb/Controllers/500.php
+##### Bad Request ###############################
+ErrorDocument 400 /appweb/Controllers/400.php
+##### Unauthorised ###############################
+ErrorDocument 401 /appweb/Controllers/401.php
