@@ -1,0 +1,11 @@
+TIMELINE PEMBUATAN WEBSITE
+	> 5 - 6 September 2022 (Sosialisasi Magang di #ARPATEAM)
+	> 7 - 17 September 2022 (Belajar Pengatar Teknologi Front-End Developer)
+	> 19 - 24 September 2022 (Merancang kebutuhan data website)
+	> 26 - 30 September 2022 (Merancang teknologi yang digunakan)
+	> 3 - 6 Oktober 2022 (Merancang aset untuk website)
+	> 7 - 15 Oktober 2022 (Membuat Menu & Header Website)
+	> 17 - 29 Oktober 2022 (Membuat konten website)
+	> 1 - 12 November 2022 (Membuat Footer Website)
+	> 14 - 19 November 2022 (Melakukan testing website)
+	> 21 - 26 November 2022 (Proses menyerahkan program ke #ARPATEAM)
